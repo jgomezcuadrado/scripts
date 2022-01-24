@@ -1,13 +1,12 @@
 cd /opt
-
 #-------------- FLUME -------
-sudo curl "https://downloads.apache.org/flume/1.9.0/apache-flume-1.9.0-bin.tar.gz" -o flume.tar.gz&
+sudo curl "https://downloads.apache.org/flume/1.9.0/apache-flume-1.9.0-bin.tar.gz" -o flume.tar.gz
+sudo tar xzf flume.tar.gz
 #-------------- KAFKA -------
-sudo curl "https://dlcdn.apache.org/kafka/3.0.0/kafka_2.13-3.0.0.tgz" -o kafka.tgz&
+sudo curl "https://dlcdn.apache.org/kafka/3.0.0/kafka_2.13-3.0.0.tgz" -o kafka.tgz
+sudo tar zxvf kafka.tgz
 #-------------- NIFI ------------
 sudo curl "https://archive.apache.org/dist/nifi/1.11.0/nifi-1.11.0-bin.tar.gz" -o nifi.tar.gz
-sudo tar xzf flume.tar.gz&
-sudo tar zxvf kafka.tgz& 
 sudo tar xzf nifi.tar.gz
 #----- limpiar --------
 sudo rm *gz
